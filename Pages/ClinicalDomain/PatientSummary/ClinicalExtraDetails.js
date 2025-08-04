@@ -120,18 +120,7 @@ class ClinicalExtraDetails {
      this.deleteReason = page.locator("xpath=//textarea[@id='Reason']");
     this.saveDeleteReason = page.locator("xpath=//button[@data-testid='Save']");
 
-    //Medication Certificate
-    // this.confirm = page.locator("xpath=//button[@aria-label='Confirm']");
-    // this.limitation = page.locator("xpath=//input[@id='limitation']");
-    // this.limitationAppliedDate = page.locator("xpath=//input[@id='limitationApplied']");
-    // this.limitationValid = page.locator("xpath=//input[@id='limitationValidTo']");
-    // this.consultedCAA =page.locator("xpath=//label[@aria-label='consultedCAA']//span//input[@type='radio']")
-    // this.reasonForLimitation=page.locator("xpath=//textarea[@id='reasonForLimitations']")
-    // this.btnAddLimitation=page.locator("xpath=//button[@aria-label='Add']")
-    // this.linkShowLimitation=page.locator("xpath=//div[@class='MuiDataGrid-row MuiDataGrid-row--lastVisible MuiDataGrid-row--dynamicHeight']//div/a[text()='Show']")
-    // this.linkEditLimitation=page.locator("xpath=//div[@class='MuiDataGrid-row MuiDataGrid-row--lastVisible MuiDataGrid-row--dynamicHeight']//div/a[text()='Edit']")
-    // this.closeShowLimitationPopup=page.locator("xpath=//button[@aria-label='remove']//*[name()='svg']")
-    // this.deleteLimitationButton=page.locator("//button[@aria-label='remove']//*[name()='svg']")
+    
     
     //Medication Certificate
     this.confirm = page.locator("xpath=//button[@aria-label='confirmMedicalCertificate']");
