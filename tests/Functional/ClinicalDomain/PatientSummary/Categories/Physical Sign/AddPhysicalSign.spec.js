@@ -121,7 +121,7 @@ test.describe("Physical Sign Category", () => {
       await Physical.selectandAddClinicalItem("Fundal height of uterus"); //This searches item and clicks on add button
       await page.waitForTimeout(2000);
       await PhysicalExtraDetails.addPhysicalSignButton()
-      await page.pause()
+     
 
      for (const field of jsonData.PhysicalSign) {
   console.log(`Label: ${field.Label}, Value: ${field.Value}`);
