@@ -241,12 +241,12 @@ test.describe("Medications Category", () => {
       //await MedicationsExtraDetails.selectStatus(jsonData.AddMedication[index].pacr_status)
       await MedicationsExtraDetails.selectAdherent(jsonData.AddMedication[index].meded_value_Adherent)
       await MedicationsExtraDetails.clickOnPrescribeAndSupply()
-      await MedicationsExtraDetails.clickOnSuitableForDelivery()
+     // await MedicationsExtraDetails.clickOnSuitableForDelivery()
       await MedicationsExtraDetails.clickOnAddToPrescribe()
       await MedicationsExtraDetails.clickOnSupply()
       await MedicationsExtraDetails.clickOnSetAsDefault()
      // await MedicationsExtraDetails.clickOnRepeatable()
-      await MedicationsExtraDetails.clickOPrivateRecord()  
+     // await MedicationsExtraDetails.clickOPrivateRecord()  
      
 
       await MedicationsExtraDetails.selectEndoserment(jsonData.AddMedication[index].paprd_endorsement) 

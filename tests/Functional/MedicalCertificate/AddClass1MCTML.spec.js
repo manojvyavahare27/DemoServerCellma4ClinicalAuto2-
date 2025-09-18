@@ -107,7 +107,7 @@ test.describe("Medical Certificate", () => {
       await patientsearch.clickOnSearchButton();
       
       await patientsearch.clickOnSearchPatientLink();
-      //await page.pause()//wait 1.5 second     
+     //wait 1.5 second     
       await page.waitForTimeout(7000)
       await confirmexisting.clickOnConfirmExistingDetails();   
       
@@ -148,6 +148,7 @@ test.describe("Medical Certificate", () => {
       await expect(page.getByText("Medical certificate deleted successfully")).toHaveText("Medical certificate deleted successfully");
       await page.waitForTimeout(1000)
     }        
+     await page.pause()
       await page.waitForTimeout(1000)
       await MedicalCertificate.ClickOnAddMedicalCertificateButton()
       await page.waitForTimeout(1000)

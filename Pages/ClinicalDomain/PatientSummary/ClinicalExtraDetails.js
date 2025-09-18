@@ -113,6 +113,7 @@ class ClinicalExtraDetails {
     //this.saveExtraDetails = page.locator("xpath=//button[@aria-label='saveCategoryExtraDetails']");
     this.saveExtraDetails = page.locator("xpath=//button[@data-testid='extraDetailsSave']");
     this.saveCarePlanDetails=page.locator("xpath=//button[@data-testid='Save']")
+    this.saveEDCarePlan=page.locator("xpath=//button[@aria-label='saveExtraDetailsOfCarePlans']")
     this.saveCheckListButton=page.locator("xpath=//div[@class='MuiGrid2-root MuiGrid2-direction-xs-row MuiGrid2-grid-xs-12 MuiGrid2-grid-sm-12 MuiGrid2-grid-md-12 mui-kqf8ps']//button[@data-testid='Save']")
     this.saveFavourites=page.locator("xpath=//div[@role='dialog']//button[normalize-space()='Save']")
     this.delete = page.locator("xpath=//button[@data-testid='Delete']");
@@ -662,6 +663,7 @@ async enterSocialNotes(soci_notes)
 
   async enterInterpretationNotes(inte_notes) {
     // await this.diagnosisNotes.type(diag_notes)
+    await this.interpretationNotes.clear()
      await this.interpretationNotes.type(inte_notes)
    }
 
@@ -780,6 +782,10 @@ async enterSocialNotes(soci_notes)
 
   async clickOnSaveExtraDetails() {
     await clickElement(this.page, this.saveExtraDetails);
+  }
+  async clickOnSaveEdCarePlan()
+  {
+    await this.saveEDCarePlan.click()
   }
 
   async clickonSaveAllergyEDButton()

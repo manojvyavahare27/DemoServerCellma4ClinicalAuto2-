@@ -187,7 +187,7 @@ test.describe("Examination Category", () => {
       //   console.log('\x1bItem was deleted successfully\x1b[0m');
       // }
 
-
+  await page.pause()
       await examinationhome.searchExamination(jsonData.AddExamination[index].pacr_que_name);
       await page.waitForTimeout(1000);
       await examinationhome.clickonAddExaminationButton();
@@ -289,6 +289,7 @@ test.describe("Examination Category", () => {
 
       //Edit Examination
      
+      
       await examinationhome.clickOnEditExaminationButton();
       //await page.waitForTimeout(2000)
       // await examinationEd.clickOnExpandExamination();
